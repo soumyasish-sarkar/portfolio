@@ -21,7 +21,26 @@ section {
   width: 100%;
   height: 100vh;
 }
-section {
+.home-page section {
+  background-image: url(images/background.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about-page section {
+  background-image: url(images/background.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.projects-page section {
+  background-image: url(images/background.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contacts-page section {
   background-image: url(images/background.png);
   background-position: center;
   background-size: cover;
@@ -425,6 +444,33 @@ header, .hero-content {
   opacity: 0;
   animation-delay: 0.2s;
 }
+
+.submit-btn {
+  padding: 10px 20px;
+  background-color: #71128e; /* Green background */
+  color: white; /* White text color */
+  border: none; /* Remove the border */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Cursor becomes a pointer when hovering */
+  border-radius: 30px; /* Make the button round */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth background color and transform transition */
+}
+
+.submit-btn:hover {
+  background-color: #d10000; /* Violet-red hover color */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+ 
+#response-msg {
+  display: none;
+  margin-top: 10px; /* Give some space between the submit button and the success message */
+  font-size: 16px;
+  color: green;
+  font-weight: bold;
+  text-align: center;
+}
+
 #footer {
   align-items: start;
   height: auto;
