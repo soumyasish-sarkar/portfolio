@@ -460,7 +460,30 @@ header, .hero-content {
   background-color: #d10000; /* Violet-red hover color */
   transform: scale(1.05); /* Slightly enlarge the button on hover */
 }
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #770f6e; /* Green */
+  color: white;
+  padding: 12px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer; /* Makes it behave like a button */
+  border: none;
+}
 
+.btn i {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+.btn:hover, .btn:focus {
+  background-color: #b420a3; /* Violet red */
+  transform: scale(1.05);
+}
  
 #response-msg {
   display: none;

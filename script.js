@@ -79,3 +79,15 @@ if (contactForm) {
         });
     });
 }
+
+
+
+document.getElementById("download-resume").addEventListener("click", function (event) {
+    event.preventDefault(); // Stop default link behavior
+    const link = document.createElement("a");
+    link.href = "soumyasish_resume.pdf"; // Path to the file
+    link.setAttribute("download", "soumyasish_resume.pdf"); // Force download
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+});
