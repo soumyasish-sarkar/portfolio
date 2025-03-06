@@ -70,7 +70,7 @@ header {
   z-index: 2; /* Ensure header is above other content */
 }
 header .header-logo {
-  margin-right: 20px; /* Further reduce the gap */
+  margin-right: -235px; /* Further reduce the gap */
 }
 .header-logo span {
   color: #ff5e00; /* SOUMYA */ 
@@ -80,7 +80,7 @@ header .header-logo {
   display: flex;
   justify-content: center;
   gap: 0px; /* Reduce gap between icons */
-  margin-top: 10px;  /* Adjust top margin if needed */
+  margin-top: 3px;  /* Adjust top margin if needed */
   z-index: 2;  /* Ensure it's above other content */
 }
 
