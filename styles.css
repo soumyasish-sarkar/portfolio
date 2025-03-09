@@ -262,14 +262,36 @@ header, .hero-content {
   flex-direction: column;
   justify-content: center;
 }
+
 #about .right-grid {
   align-items: center;
 }
+/* Left and Right Grid Styles */
+.left-grid-contacts, .right-grid-contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px; /* Add padding for spacing */
+  border-radius: 15px; /* Rounded corners for the grid items */
+  border: 2px solid transparent; /* Initial transparent border */
+  transition: border 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for border and shadow */
+}
+
+/* Hover Effect */
+.left-grid-contacts:hover, .right-grid-contacts:hover {
+  border: 2px solid #e523ff; /* Border color on hover */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); /* Light shadow for the hover effect */
+}
+
+#about .right-grid-contacts {
+  align-items: center;
+}
+
 .section-sub {
   font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: 1px;
-  color: #b0ad12;   /* Sub section LIKE About Us*/
+  color: #dc88fb;   /* Sub section LIKE About Us  #d684ff*/
   text-transform: capitalize;
   animation: bottomIn 1s ease-in-out forwards;
   animation-delay: 0.2s;
@@ -285,6 +307,7 @@ header, .hero-content {
   animation: bottomIn 1s ease-in-out forwards;
   animation-delay: 0.3s;
   opacity: 0;
+  color: #e523ff;
 }
 #about .left-grid p,
 #projects .left-grid p {
@@ -303,7 +326,7 @@ header, .hero-content {
   text-transform: capitalize;
   height: 45px;
   width: 200px;
-  background-color: #3ce134; /* action button*/
+  background-color: #e134db; /* action button*/
   border-radius: 25px;
   cursor: pointer;
   transition: 0.3s;
@@ -551,7 +574,7 @@ header, .hero-content {
 .blog-title {
   text-align: center;
   font-size: 2rem;
-  color: #c5de22;
+  color: #e523ff;
   margin-top: -20px;
 }
 
@@ -604,4 +627,43 @@ header, .hero-content {
 body.blog-page {
   background: url("images/background.png ") no-repeat center center fixed;
   background-size: cover;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 30px;
+  transition: 0.3s;
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 0.2s;
+  font-weight: normal;
+}
+
+.contact-item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.contact-item i {
+  font-size: 24px;
+  color: #ff5e00;
+}
+
+.contact-item span {
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
 }
