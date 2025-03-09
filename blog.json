@@ -1,0 +1,14 @@
+[
+    {
+        "title": "My First Blog Post",
+        "date": "2025-03-01",
+        "image": "image/image1.jpg",
+        "content": "This is the content of my first blog post. Here I share my journey into the world of web development."
+    },
+    {
+        "title": "Exploring New Technologies",
+        "date": "2025-03-07",
+        "image": "path/to/image2.jpg",
+        "content": "In this post, I discuss my experiences learning new technologies like React and Node.js."
+    }
+]

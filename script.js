@@ -91,3 +91,27 @@ document.getElementById("download-resume").addEventListener("click", function (e
     link.click();
     document.body.removeChild(link);
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    fetch("blog.json")
+        .then(response => response.json())
+        .then(data => {
+            const container = document.getElementById("blog-posts-container");
+
+            data.forEach(post => {
+                const postElement = document.createElement("div");
+                postElement.classList.add("blog-post");
+                
+                postElement.innerHTML = `
+                    <img src="${post.image}" alt="${post.title}">
+                    <h3>${post.title}</h3>
+                    <p>${post.content}</p>
+                    <div class="date">Posted on: ${post.date}</div>
+                `;
+                
+                container.appendChild(postElement);
+            });
+        })
+        .catch(error => console.error("Error loading blog posts:", error));
+});
