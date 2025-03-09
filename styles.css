@@ -667,3 +667,101 @@ body.blog-page {
   font-weight: normal;
   color: white;
 }
+
+.projects-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(210, 144, 248, 0.093); /* Semi-transparent white */
+  border-radius: 15px;  /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: scroll;
+  height: 80vh; /* Enables scrolling */
+  scrollbar-width: thin;
+  scrollbar-color: #0073e6 #f1f1f1;
+}
+
+.projects-container::-webkit-scrollbar {
+  display: none;  /* Hide scrollbar in Webkit browsers (Chrome, Safari) */
+}
+
+.projects-container {
+  -ms-overflow-style: none;  /* For IE and Edge */
+  scrollbar-width: none;  /* For Firefox */
+}
+
+.projects-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #e523ff;
+  margin-top: -20px;
+}
+
+.projects-post {
+  display: flex;
+  align-items: center;
+  background: #e395fd17;
+  border-radius: 200px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgb(255, 255, 255);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.projects-post:hover {
+  box-shadow: 0 0 20px #ffffff;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+}
+
+
+/* Left side: Image (30% width) */
+.projects-post img {
+  width: 350px; /* Adjust the size as needed */
+  height: 350px; /* Same height as width to keep it square */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image fills the area without distortion */
+  display: block;
+  margin: auto; /* Centers the image horizontally and vertically */
+}
+/* Right side: Blog content */
+.projects-content {
+  width: 70%;
+  padding-left: 20px;
+}
+
+.projects-content h3 {
+  font-size: 22px;
+  color: #65e8ff;
+  
+}
+
+.projects-content .date {
+  font-size: 14px;
+  color: #aefbff;
+  margin-bottom: 10px;
+}
+
+.projects-content p {
+  font-size: 16px;
+  color: #ffffff;
+}
+projects.blog-page {
+  background: url("images/background.png ") no-repeat center center fixed;
+  background-size: cover;
+}
