@@ -4,43 +4,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Soumyasish Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <title>Blog - Soumyasish</title>
 
   <!-- styles -->
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="animations.css">
   <link rel="stylesheet" href="responsive.css">
+  <script defer src="script.js"></script>
 </head>
 
-<body class="about-page">
+<body class="blog-page">
 
-  <section id="about">
+  <section id="blog">
     <div class="section-box">
       <div class="content-wrap">
         <header>
           <a class="header-logo"><span>Soumya</span>sish</a>
           <nav>
             <a class="nav-items" href="index.html">Home</a>
-            <a class="nav-items active" href="about.html">About Me</a>
+            <a class="nav-items" href="about.html">About Me</a>
             <a class="nav-items" href="projects.html">Projects</a>
-            <a class="nav-items" href="blog.html">Blog</a>
+            <a class="nav-items active" href="blog.html">Blog</a>
             <a class="nav-items" href="contacts.html">Contacts</a>
           </nav>
         </header>
       </div>
-      <div class="content-grid">
-        <div class="left-grid">
-          <section id="blog">
-            <div class="blog-section">
-    
-            </div>
-          </section>
-          <p>
-          </p>
+
+      <div class="blog-container">
+        <h1 class="blog-title">My Blog</h1>
+        <div id="blog-posts-container">
+          <!-- Blog posts will be dynamically inserted here -->
         </div>
       </div>
+
+    </div>
   </section>
-  <script src="script.js"></script>
+
+  <script src="blog.js"></script>
 </body>
 
 </html>

@@ -96,7 +96,7 @@ header {
   z-index: 2; /* Ensure header is above other content */
 }
 header .header-logo {
-  margin-right: -210px; /* Further reduce the gap */
+  margin-right: -200px; /* Further reduce the gap */
 }
 .header-logo span {
   color: #ff5e00; /* SOUMYA */ 
@@ -526,49 +526,82 @@ header, .hero-content {
 }
 
 
-
-.blog-section {
-  padding: 50px 20px;
-  background-color: #f4f4f4;
-  color: #333;
-  text-align: center;
+.blog-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(210, 144, 248, 0); /* Semi-transparent white */
+  border-radius: 15px;  /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: scroll;
+  height: 80vh; /* Enables scrolling */
+  scrollbar-width: thin;
+  scrollbar-color: #0073e6 #f1f1f1;
 }
 
-.blog-section h2 {
+.blog-container::-webkit-scrollbar {
+  display: none;  /* Hide scrollbar in Webkit browsers (Chrome, Safari) */
+}
+
+.blog-container {
+  -ms-overflow-style: none;  /* For IE and Edge */
+  scrollbar-width: none;  /* For Firefox */
+}
+
+.blog-title {
+  text-align: center;
   font-size: 2rem;
-  margin-bottom: 30px;
+  color: #c5de22;
+  margin-top: -20px;
 }
 
 .blog-post {
-  background: white;
+  display: flex;
+  align-items: center;
+  background: #e395fd17;
   border-radius: 8px;
   margin-bottom: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  max-width: 800px;
-  margin: 0 auto;
   padding: 20px;
+  box-shadow: 0 2px 6px rgb(255, 255, 255);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
 }
 
+.blog-post:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Left side: Image (30% width) */
 .blog-post img {
-  width: 100%;
+  width: 30%;
   height: auto;
   border-radius: 8px;
+  object-fit: cover;
+}
+/* Right side: Blog content */
+.blog-content {
+  width: 70%;
+  padding-left: 20px;
 }
 
-.blog-post h3 {
-  font-size: 1.5rem;
-  color: #333;
+.blog-content h3 {
+  font-size: 22px;
+  color: #65e8ff;
+  
 }
 
-.blog-post p {
-  font-size: 1rem;
-  color: #555;
+.blog-content .date {
+  font-size: 14px;
+  color: #aefbff;
+  margin-bottom: 10px;
 }
 
-.blog-post .date {
-  font-size: 0.9rem;
-  color: #777;
-  text-align: right;
-  margin-top: 10px;
+.blog-content p {
+  font-size: 16px;
+  color: #ffffff;
+}
+body.blog-page {
+  background: url("images/background.png ") no-repeat center center fixed;
+  background-size: cover;
 }

@@ -1,14 +1,8 @@
 [
     {
-        "title": "My First Blog Post",
-        "date": "2025-03-01",
-        "image": "image/image1.jpg",
-        "content": "This is the content of my first blog post. Here I share my journey into the world of web development."
-    },
-    {
-        "title": "Exploring New Technologies",
-        "date": "2025-03-07",
-        "image": "path/to/image2.jpg",
-        "content": "In this post, I discuss my experiences learning new technologies like React and Node.js."
+        "title": "From JNV Banipur to Tezpur University: My Education Journey",
+        "date": "2025-04-09",
+        "image": "images/blog1.jpg",
+        "content": "My educational journey began at Jawahar Navodaya Vidyalaya (JNV) Banipur, West Bengal, where I learned the importance of hard work, discipline, and commitment. I was selected for Dakshana JEE coaching (JNV Kottayam, Kerala) after Class 10 through NDST (Navodaya Dakshana Selection Test), which exposed me to competitive exams and the pressure of time management. After JEE, I choose Computer Science and Engineering B.Tech at Tezpur University. My time at Tezpur University has been full of opportunities for personal growth, academic learning, and involvement in extracurricular activities, which have helped me develop both as a student and as an individual."
     }
 ]
